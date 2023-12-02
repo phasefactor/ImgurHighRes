@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE3184DC2B1ACC2C00162B13 /* ImgurHighRes Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = CE3184DB2B1ACC2C00162B13 /* ImgurHighRes Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CE3184EB2B1ACC2C00162B13 /* ImgurHighRes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3184A22B1ACC2B00162B13 /* ImgurHighRes.swift */; };
+		CE3184ED2B1ACC2C00162B13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE3184A32B1ACC2C00162B13 /* Assets.xcassets */; };
+		CE3184EF2B1ACC2C00162B13 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3184A52B1ACC2C00162B13 /* SafariWebExtensionHandler.swift */; };
+		CE3184F12B1ACC2C00162B13 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = CE3184A72B1ACC2C00162B13 /* _locales */; };
+		CE3184F32B1ACC2C00162B13 /* images in Resources */ = {isa = PBXBuildFile; fileRef = CE3184A82B1ACC2C00162B13 /* images */; };
+		CE3184F52B1ACC2C00162B13 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = CE3184A92B1ACC2C00162B13 /* manifest.json */; };
+		CE3184F72B1ACC2C00162B13 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = CE3184AA2B1ACC2C00162B13 /* background.js */; };
+		CE3184F92B1ACC2C00162B13 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = CE3184AB2B1ACC2C00162B13 /* content.js */; };
+		CE3184FB2B1ACC2C00162B13 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = CE3184AC2B1ACC2C00162B13 /* popup.html */; };
+		CE3184FD2B1ACC2C00162B13 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = CE3184AD2B1ACC2C00162B13 /* popup.css */; };
+		CE3184FF2B1ACC2C00162B13 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = CE3184AE2B1ACC2C00162B13 /* popup.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE3184DD2B1ACC2C00162B13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE3184972B1ACC2B00162B13 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE3184DA2B1ACC2C00162B13;
+			remoteInfo = "ImgurHighRes Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CE31850C2B1ACC2C00162B13 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CE3184DC2B1ACC2C00162B13 /* ImgurHighRes Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CE3184A22B1ACC2B00162B13 /* ImgurHighRes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgurHighRes.swift; sourceTree = "<group>"; };
+		CE3184A32B1ACC2C00162B13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE3184A52B1ACC2C00162B13 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		CE3184A72B1ACC2C00162B13 /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
+		CE3184A82B1ACC2C00162B13 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		CE3184A92B1ACC2C00162B13 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		CE3184AA2B1ACC2C00162B13 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
+		CE3184AB2B1ACC2C00162B13 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
+		CE3184AC2B1ACC2C00162B13 /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
+		CE3184AD2B1ACC2C00162B13 /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
+		CE3184AE2B1ACC2C00162B13 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
+		CE3184C02B1ACC2C00162B13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE3184C52B1ACC2C00162B13 /* ImgurHighRes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImgurHighRes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE3184CC2B1ACC2C00162B13 /* ImgurHighRes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ImgurHighRes.entitlements; sourceTree = "<group>"; };
+		CE3184D62B1ACC2C00162B13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE3184DB2B1ACC2C00162B13 /* ImgurHighRes Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ImgurHighRes Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE3184E12B1ACC2C00162B13 /* ImgurHighRes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ImgurHighRes.entitlements; sourceTree = "<group>"; };
+		CE3185102B1ADFF200162B13 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE3184C22B1ACC2C00162B13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE3184D82B1ACC2C00162B13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE3184962B1ACC2B00162B13 = {
+			isa = PBXGroup;
+			children = (
+				CE31849B2B1ACC2B00162B13 /* App */,
+				CE3184A42B1ACC2C00162B13 /* Extension */,
+				CE3185102B1ADFF200162B13 /* README.md */,
+				CE3184B42B1ACC2C00162B13 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE31849B2B1ACC2B00162B13 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CE3184A22B1ACC2B00162B13 /* ImgurHighRes.swift */,
+				CE3184A32B1ACC2C00162B13 /* Assets.xcassets */,
+				CE3184C02B1ACC2C00162B13 /* Info.plist */,
+				CE3184CC2B1ACC2C00162B13 /* ImgurHighRes.entitlements */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CE3184A42B1ACC2C00162B13 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CE3184E12B1ACC2C00162B13 /* ImgurHighRes.entitlements */,
+				CE3184D62B1ACC2C00162B13 /* Info.plist */,
+				CE3184A52B1ACC2C00162B13 /* SafariWebExtensionHandler.swift */,
+				CE3184A62B1ACC2C00162B13 /* Resources */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		CE3184A62B1ACC2C00162B13 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CE3184A72B1ACC2C00162B13 /* _locales */,
+				CE3184A82B1ACC2C00162B13 /* images */,
+				CE3184A92B1ACC2C00162B13 /* manifest.json */,
+				CE3184AA2B1ACC2C00162B13 /* background.js */,
+				CE3184AB2B1ACC2C00162B13 /* content.js */,
+				CE3184AC2B1ACC2C00162B13 /* popup.html */,
+				CE3184AD2B1ACC2C00162B13 /* popup.css */,
+				CE3184AE2B1ACC2C00162B13 /* popup.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CE3184B42B1ACC2C00162B13 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE3184C52B1ACC2C00162B13 /* ImgurHighRes.app */,
+				CE3184DB2B1ACC2C00162B13 /* ImgurHighRes Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE3184C42B1ACC2C00162B13 /* App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE31850D2B1ACC2C00162B13 /* Build configuration list for PBXNativeTarget "App" */;
+			buildPhases = (
+				CE3184C12B1ACC2C00162B13 /* Sources */,
+				CE3184C22B1ACC2C00162B13 /* Frameworks */,
+				CE3184C32B1ACC2C00162B13 /* Resources */,
+				CE31850C2B1ACC2C00162B13 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE3184DE2B1ACC2C00162B13 /* PBXTargetDependency */,
+			);
+			name = App;
+			productName = "ImgurHighRes (macOS)";
+			productReference = CE3184C52B1ACC2C00162B13 /* ImgurHighRes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE3184DA2B1ACC2C00162B13 /* Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE3185092B1ACC2C00162B13 /* Build configuration list for PBXNativeTarget "Extension" */;
+			buildPhases = (
+				CE3184D72B1ACC2C00162B13 /* Sources */,
+				CE3184D82B1ACC2C00162B13 /* Frameworks */,
+				CE3184D92B1ACC2C00162B13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Extension;
+			productName = "ImgurHighRes Extension (macOS)";
+			productReference = CE3184DB2B1ACC2C00162B13 /* ImgurHighRes Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE3184972B1ACC2B00162B13 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					CE3184C42B1ACC2C00162B13 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					CE3184DA2B1ACC2C00162B13 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = CE31849A2B1ACC2B00162B13 /* Build configuration list for PBXProject "ImgurHighRes" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE3184962B1ACC2B00162B13;
+			productRefGroup = CE3184B42B1ACC2C00162B13 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE3184C42B1ACC2C00162B13 /* App */,
+				CE3184DA2B1ACC2C00162B13 /* Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE3184C32B1ACC2C00162B13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE3184ED2B1ACC2C00162B13 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE3184D92B1ACC2C00162B13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE3184F72B1ACC2C00162B13 /* background.js in Resources */,
+				CE3184FD2B1ACC2C00162B13 /* popup.css in Resources */,
+				CE3184FB2B1ACC2C00162B13 /* popup.html in Resources */,
+				CE3184F32B1ACC2C00162B13 /* images in Resources */,
+				CE3184F52B1ACC2C00162B13 /* manifest.json in Resources */,
+				CE3184F12B1ACC2C00162B13 /* _locales in Resources */,
+				CE3184F92B1ACC2C00162B13 /* content.js in Resources */,
+				CE3184FF2B1ACC2C00162B13 /* popup.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE3184C12B1ACC2C00162B13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE3184EB2B1ACC2C00162B13 /* ImgurHighRes.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE3184D72B1ACC2C00162B13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE3184EF2B1ACC2C00162B13 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE3184DE2B1ACC2C00162B13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE3184DA2B1ACC2C00162B13 /* Extension */;
+			targetProxy = CE3184DD2B1ACC2C00162B13 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CE3185002B1ACC2C00162B13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE3185012B1ACC2C00162B13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		CE31850A2B1ACC2C00162B13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Extension/ImgurHighRes.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Extension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "ImgurHighRes Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.phasefactor.ImgurHighRes.Extension;
+				PRODUCT_NAME = "ImgurHighRes Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE31850B2B1ACC2C00162B13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Extension/ImgurHighRes.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Extension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "ImgurHighRes Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.phasefactor.ImgurHighRes.Extension;
+				PRODUCT_NAME = "ImgurHighRes Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CE31850E2B1ACC2C00162B13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = App/ImgurHighRes.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ImgurHighRes;
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.phasefactor.ImgurHighRes;
+				PRODUCT_NAME = ImgurHighRes;
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE31850F2B1ACC2C00162B13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = App/ImgurHighRes.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ImgurHighRes;
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.phasefactor.ImgurHighRes;
+				PRODUCT_NAME = ImgurHighRes;
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE31849A2B1ACC2B00162B13 /* Build configuration list for PBXProject "ImgurHighRes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE3185002B1ACC2C00162B13 /* Debug */,
+				CE3185012B1ACC2C00162B13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE3185092B1ACC2C00162B13 /* Build configuration list for PBXNativeTarget "Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE31850A2B1ACC2C00162B13 /* Debug */,
+				CE31850B2B1ACC2C00162B13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE31850D2B1ACC2C00162B13 /* Build configuration list for PBXNativeTarget "App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE31850E2B1ACC2C00162B13 /* Debug */,
+				CE31850F2B1ACC2C00162B13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE3184972B1ACC2B00162B13 /* Project object */;
+}
